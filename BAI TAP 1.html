@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="kiemTra()">
+<script>
+    let manga=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let mangb=["Ursa_Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa_Major", "Leo"]
+    let ngoiSao=prompt("nhap ten ngoi sao")
+    let co=0;
+    function kiemTra() {
+        for (let i=0;i<manga.length;i++){
+            if (ngoiSao==manga[i]) {
+                alert(mangb[i]);
+                co=1;
+                break
+
+            }
+        }if (co==0){
+            alert("ko tim thay ngoi sao")
+
+        }
+    }
+
+
+</script>
+</body>
+</html>
